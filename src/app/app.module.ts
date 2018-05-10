@@ -7,12 +7,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
+import { PlayerListComponent } from './player-list/player-list.component';
+import { PlayerDetailComponent } from './player-detail/player-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PlayerListComponent,
+    PlayerDetailComponent
   ],
   imports: [
     BrowserModule,
