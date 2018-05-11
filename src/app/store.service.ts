@@ -31,4 +31,9 @@ export class StoreService {
                                 pictureURL: localUpdatedItem.pictureURL});
   }
 
+  deleteItem(localItemToDelete){
+    var itemEntryInFirebase = this.getItemById(localItemToDelete.$key);
+    itemEntryInFirebase.remove();
+  }
+
 }
