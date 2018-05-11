@@ -1,0 +1,20 @@
+{ "players": [{
+    "firstName": "Sean",
+    "lastName": "McDermott",
+    "score": "0",
+    "scoreArray": "[]",
+    "id": "1"
+    }, {
+    "firstName": "Abigail",
+    "lastName": "Wallace",
+    "score": "0",
+    "scoreArray": "[]",
+    "id": "2"
+      }, {
+    "firstName": "Walt",
+    "lastName": "Whitman",
+    "score": "0",
+    "scoreArray": "[]",
+    "id": "3"
+  }]
+}

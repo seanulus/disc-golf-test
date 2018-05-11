@@ -12,6 +12,7 @@ import { PlayerService } from '../player.service';
 })
 export class PlayerDetailComponent implements OnInit {
   playerId: number = null;
+  playerToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private playerService: PlayerService) { }
 
@@ -19,6 +20,7 @@ export class PlayerDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.playerId = parseInt(urlParameters['id']);
     });
+    this.playerToDisplay = this.playerService.getPlayerById(this.playerId);
   }
 
 }

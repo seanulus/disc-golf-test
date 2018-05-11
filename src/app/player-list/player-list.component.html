@@ -1,6 +1,6 @@
 <h2>Active Players</h2>
 
-<div *ngFor="let player of masterPlayerList" (click)="goToDetailPage(player)" class="card card-default">
+<div *ngFor="let player of masterPlayerList | async" (click)="goToDetailPage(player)" class="card card-default">
   <div class="card-body">
     <h3>{{player.firstName}}
     {{player.lastName}}</h3>
