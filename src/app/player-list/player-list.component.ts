@@ -1,26 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { StoreModel } from '../store.model';
 import { Router } from '@angular/router';
-import { PlayerService } from '../player.service';
+import { StoreService } from '../store.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-player-list',
   templateUrl: './player-list.component.html',
   styleUrls: ['./player-list.component.css'],
-  providers: [PlayerService]
+  providers: [StoreService]
 })
-export class PlayerListComponent implements OnInit {
+export class StoreListComponent implements OnInit {
 
-  constructor(private router: Router, private playerService: PlayerService) { }
+  constructor(private router: Router, private storeService: StoreService) { }
 
-  masterPlayerList: FirebaseListObservable<any[]>;
+  masterStoreList: FirebaseListObservable<any[]>;
 
   ngOnInit() {
-    this.masterPlayerList = this.playerService.getPlayers();
+    this.masterStoreList = this.storeService.getPlayers();
   }
 
   goToDetailPage(clickedPlayer: StoreModel) {
-    // this.router.navigate(['players', clickedPlayer.id]);
+    // this.router.navigate(['stores', clickedPlayer.id]);
   };
 }

@@ -4,24 +4,24 @@ import { PLAYERS } from './mock-players';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
-export class PlayerService {
-  players: FirebaseListObservable<any[]>;
+export class StoreService {
+  stores: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.players = database.list('players');
+    this.stores = database.list('stores');
   }
 
   getPlayers() {
-    return this.players;
+    return this.stores;
   }
 
-  addPlayer(newPlayer: StoreModel) {
-    this.players.push(newPlayer);
+  addPlayer(newStore: StoreModel) {
+    this.stores.push(newStore);
   }
 
-  getPlayerById(playerId: number) {
+  getPlayerById(storeId: number) {
     // for (let i = 0; i < PLAYERS.length - 1; i++) {
-    //   if(PLAYERS[i].id === playerId) {
+    //   if(PLAYERS[i].id === storeId) {
     //     return PLAYERS[i];
     //   }
     // }

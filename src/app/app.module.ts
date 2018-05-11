@@ -10,7 +10,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
-import { PlayerListComponent } from './player-list/player-list.component';
+import { StoreListComponent } from './player-list/player-list.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
 import { AdminComponent } from './admin/admin.component';
 
@@ -25,7 +25,7 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    PlayerListComponent,
+    StoreListComponent,
     PlayerDetailComponent,
     AdminComponent
   ],
