@@ -18,7 +18,7 @@ export class StoreListComponent implements OnInit {
   currentRoute: string = this.router.url;
 
   ngOnInit() {
-    this.masterStoreList = this.storeService.getPlayers();
+    this.masterStoreList = this.storeService.getItems();
   }
 
   goToDetailPage(clickedItem) {

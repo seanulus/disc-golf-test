@@ -16,8 +16,8 @@ export class AdminComponent implements OnInit {
   }
 
   submitForm(item: string, description: string, price: number, pictureURL: string) {
-    let newPlayer: StoreModel = new StoreModel(item, description, price, pictureURL);
-    this.playerService.addPlayer(newPlayer);
+    let newItem: StoreModel = new StoreModel(item, description, price, pictureURL);
+    this.playerService.addItem(newItem);
   }
 
 }

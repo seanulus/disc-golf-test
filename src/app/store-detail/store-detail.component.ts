@@ -20,7 +20,7 @@ export class StoreDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.itemId = urlParameters['id'];
     });
-    this.itemToDisplay = this.playerService.getPlayerById(this.itemId);
+    this.itemToDisplay = this.playerService.getItemById(this.itemId);
   }
 
 }

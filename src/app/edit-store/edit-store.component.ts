@@ -16,4 +16,8 @@ export class EditStoreComponent implements OnInit {
   ngOnInit() {
   }
 
+  beginUpdatingItem(itemToUpdate){
+    this.storeService.updateItem(itemToUpdate);
+  }
+    
 }

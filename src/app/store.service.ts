@@ -11,23 +11,24 @@ export class StoreService {
     this.stores = database.list('stores');
   }
 
-  getPlayers() {
+  getItems() {
     return this.stores;
   }
 
-  addPlayer(newStore: StoreModel) {
+  addItem(newStore: StoreModel) {
     this.stores.push(newStore);
   }
 
-  getPlayerById(storeId: string) {
-    return this.database.object('stores/' + storeId)
+  getItemById(storeId: string) {
+    return this.database.object('stores/' + storeId);
   }
 
   updateItem(localUpdatedItem) {
-    var itemEntryInFirebase = this.getPlayerById(localUpdatedItem.$key);
-    itemEntryInFirebase.update({title: localUpdatedItem.title,
-                                artist: localUpdatedItem.artist,
-                                description: localUpdatedItem.description});
+    var itemEntryInFirebase = this.getItemById(localUpdatedItem.$key);
+    itemEntryInFirebase.update({item: localUpdatedItem.item,
+                                price: localUpdatedItem.price,
+                                description: localUpdatedItem.description,
+                                pictureURL: localUpdatedItem.pictureURL});
   }
 
 }
