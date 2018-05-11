@@ -7,10 +7,11 @@
   background-color: #6e7b91;
 }
 
-.btn {
+.btn-group-vertical {
   margin-right: 20px;
 }
 
 .search {
   float: left;
+  margin-right: 4px;
 }
