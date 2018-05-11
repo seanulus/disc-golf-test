@@ -8,7 +8,7 @@ export class GoogleMapsApiService {
 
   constructor(private http: Http) { }
 
-  getLocation(location: string) {
+  getByLocation(location: string) {
     return this.http.get(`https://maps.googleapis.com/maps/api/staticmap?center=${location}&size=600x300&maptype=roadmap&key=${apiKey}`)
   }
 

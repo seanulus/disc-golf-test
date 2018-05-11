@@ -5,6 +5,7 @@ import { StoreListComponent } from './store-list/store-list.component';
 import { StoreDetailComponent } from './store-detail/store-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { PlayerComponent } from './player/player.component';
+import { GoogleMapsFormComponent } from './google-maps-form/google-maps-form.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'player-list',
     component: PlayerComponent
+  },
+  {
+    path: 'google-maps',
+    component: GoogleMapsFormComponent
   }
 ];
 

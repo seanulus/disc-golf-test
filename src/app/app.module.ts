@@ -19,6 +19,8 @@ import { PlayerListComponent } from './player-list/player-list.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { NewPlayerComponent } from './new-player/new-player.component';
 import { NamePipe } from './name.pipe';
+import { GoogleMapsFormComponent } from './google-maps-form/google-maps-form.component';
+import { LocationsComponent } from './locations/locations.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -39,7 +41,9 @@ export const firebaseConfig = {
     PlayerListComponent,
     EditPlayerComponent,
     NewPlayerComponent,
-    NamePipe
+    NamePipe,
+    GoogleMapsFormComponent,
+    LocationsComponent
   ],
   imports: [
     BrowserModule,
