@@ -1,0 +1,20 @@
+<button class="btn mt-4 btn-warning" (click)="newPlayer1()">Add A Player</button>
+<div class="card" *ngIf="newPlayer">
+  <h5>Enter a New Player:</h5>
+  <div>
+    <label>Enter First Name:</label>
+    <input #firstName>
+  </div>
+  <div>
+    <label>Enter Last Name:</label>
+    <input #lastName>
+  </div>
+  <div>
+    <label>Enter Starting Score:</label>
+    <input #score>
+  </div>
+  <div class="">
+    <button class="btn ml-2 btn-warning"(click)="submitForm(firstName.value, lastName.value, score.value); firstName.valu=''; lastName.value=''; score.value=';'">Add Player</button>
+    <button class="btn btn-warning"(click)="finishedNewPlayer()">Done</button>
+  </div>
+</div>

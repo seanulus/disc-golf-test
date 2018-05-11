@@ -1,0 +1,73 @@
+<h1>Players:</h1>
+<label for="search">Search By First Name:</label>
+<input #searchName type="text">
+<button (click)="runName(searchName.value)" class="btn btn-success btn-sm search">Search</button>
+<div class="row">
+  <div class="card" *ngFor="let player of childPlayersList | name:filterByName">
+    <div class="row">
+      <div class="col-md-2">
+        <h5>{{player.firstName}} {{player.lastName}}</h5>
+      </div>
+      <div class="col-md-2">
+        <h5>Player Score:</h5>
+        <p><strong>{{player.score}}</strong></p>
+      </div>
+      <div class="col-md-7">
+        <table class="table table-sm table-dark">
+          <thead>
+            <tr>
+              <th scope="col">{{player.name}}</th>
+              <th scope="col">1</th>
+              <th scope="col">2</th>
+              <th scope="col">3</th>
+              <th scope="col">4</th>
+              <th scope="col">5</th>
+              <th scope="col">6</th>
+              <th scope="col">7</th>
+              <th scope="col">8</th>
+              <th scope="col">9</th>
+              <th scope="col">10</th>
+              <th scope="col">11</th>
+              <th scope="col">12</th>
+              <th scope="col">13</th>
+              <th scope="col">14</th>
+              <th scope="col">15</th>
+              <th scope="col">16</th>
+              <th scope="col">17</th>
+              <th scope="col">18</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Strokes</th>
+              <td>{{player.scoreArray[0]}}</td>
+              <td>{{player.scoreArray[1]}}</td>
+              <td>{{player.scoreArray[2]}}</td>
+              <td>{{player.scoreArray[3]}}</td>
+              <td>{{player.scoreArray[4]}}</td>
+              <td>{{player.scoreArray[5]}}</td>
+              <td>{{player.scoreArray[6]}}</td>
+              <td>{{player.scoreArray[7]}}</td>
+              <td>{{player.scoreArray[8]}}</td>
+              <td>{{player.scoreArray[9]}}</td>
+              <td>{{player.scoreArray[10]}}</td>
+              <td>{{player.scoreArray[11]}}</td>
+              <td>{{player.scoreArray[12]}}</td>
+              <td>{{player.scoreArray[13]}}</td>
+              <td>{{player.scoreArray[14]}}</td>
+              <td>{{player.scoreArray[15]}}</td>
+              <td>{{player.scoreArray[16]}}</td>
+              <td>{{player.scoreArray[17]}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-1">
+        <button class="btn btn-sm btn-warning" (click)="editPlayerClicked(player)">Edit Player</button>
+        <button class="btn btn-sm btn-info mt-1" (click)="birdie(player)">Birdie</button>
+        <button class="btn btn-sm btn-success mt-1" (click)="par(player)">Par</button>
+        <button class="btn btn-sm btn-danger mt-1" (click)="bogey(player)">Bogey</button>
+      </div>
+    </div>
+  </div>
+</div>
