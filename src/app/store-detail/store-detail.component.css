@@ -1,3 +1,9 @@
 .card {
-  width: 40px;
+  width: 24%;
+  text-align: center;
+  border: black solid 2px;
+}
+
+img {
+  margin-left: 80px;
 }
