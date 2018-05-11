@@ -20,7 +20,7 @@ export class StoreListComponent implements OnInit {
     this.masterStoreList = this.storeService.getPlayers();
   }
 
-  goToDetailPage(clickedPlayer: StoreModel) {
-    // this.router.navigate(['stores', clickedPlayer.id]);
+  goToDetailPage(clickedItem) {
+    this.router.navigate(['stores', clickedItem.$key]);
   };
 }

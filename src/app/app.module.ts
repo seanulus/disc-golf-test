@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
 import { StoreListComponent } from './store-list/store-list.component';
-import { PlayerDetailComponent } from './store-detail/store-detail.component';
+import { StoreDetailComponent } from './store-detail/store-detail.component';
 import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
@@ -26,7 +26,7 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     StoreListComponent,
-    PlayerDetailComponent,
+    StoreDetailComponent,
     AdminComponent
   ],
   imports: [

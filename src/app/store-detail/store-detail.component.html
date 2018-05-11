@@ -1,5 +1,5 @@
 <div class="card">
-  <h3>{{playerToDisplay.firstName}}</h3>
-  <h4>{{playerToDisplay.lastName}}</h4>
-  <p>{{playerToDisplay.score}}</p>
+  <h3>{{(itemToDisplay | async)?.item}}</h3>
+  <h4>${{(itemToDisplay | async)?.price}}</h4>
+  <p>{{(itemToDisplay | async)?.description}}</p>
 </div>

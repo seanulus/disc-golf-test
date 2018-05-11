@@ -10,17 +10,17 @@ import { StoreService } from '../store.service';
   styleUrls: ['./store-detail.component.css'],
   providers: [StoreService]
 })
-export class PlayerDetailComponent implements OnInit {
-  playerId: number = null;
-  playerToDisplay;
+export class StoreDetailComponent implements OnInit {
+  itemId: string = null;
+  itemToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private playerService: StoreService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.playerId = parseInt(urlParameters['id']);
+      this.itemId = urlParameters['id'];
     });
-    this.playerToDisplay = this.playerService.getPlayerById(this.playerId);
+    this.itemToDisplay = this.playerService.getPlayerById(this.itemId);
   }
 
 }
