@@ -19,12 +19,8 @@ export class StoreService {
     this.stores.push(newStore);
   }
 
-  getPlayerById(storeId: number) {
-    // for (let i = 0; i < PLAYERS.length - 1; i++) {
-    //   if(PLAYERS[i].id === storeId) {
-    //     return PLAYERS[i];
-    //   }
-    // }
+  getPlayerById(storeId: string) {
+    return this.database.object('stores/' + storeId)
   }
 
 }
