@@ -5,9 +5,9 @@ import { StoreService } from '../store.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-player-list',
-  templateUrl: './player-list.component.html',
-  styleUrls: ['./player-list.component.css'],
+  selector: 'app-store-list',
+  templateUrl: './store-list.component.html',
+  styleUrls: ['./store-list.component.css'],
   providers: [StoreService]
 })
 export class StoreListComponent implements OnInit {

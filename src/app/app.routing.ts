@@ -1,8 +1,8 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { StoreListComponent } from './player-list/player-list.component';
-import { PlayerDetailComponent } from './player-detail/player-detail.component';
+import { StoreListComponent } from './store-list/store-list.component';
+import { PlayerDetailComponent } from './store-detail/store-detail.component';
 import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
@@ -11,7 +11,7 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'player-list',
+    path: 'store-list',
     component: StoreListComponent
   },
   {

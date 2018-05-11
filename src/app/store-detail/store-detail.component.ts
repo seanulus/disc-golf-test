@@ -5,9 +5,9 @@ import { StoreModel } from '../store.model';
 import { StoreService } from '../store.service';
 
 @Component({
-  selector: 'app-player-detail',
-  templateUrl: './player-detail.component.html',
-  styleUrls: ['./player-detail.component.css'],
+  selector: 'app-store-detail',
+  templateUrl: './store-detail.component.html',
+  styleUrls: ['./store-detail.component.css'],
   providers: [StoreService]
 })
 export class PlayerDetailComponent implements OnInit {
