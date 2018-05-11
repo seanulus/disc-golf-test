@@ -2,16 +2,19 @@
     "item": "Destroyer",
     "description": "A very fast disc with great speed capability",
     "price": "10",
+    "pictureURL":"https://images-na.ssl-images-amazon.com/images/I/61wvp3PFOsL._SL1000_.jpg",
     "id": "1"
     }, {
     "item": "Valkyrie",
     "description": "A slower speed disc with more curve capability",
     "price": "20",
+    "pictureURL":"https://images-na.ssl-images-amazon.com/images/I/716ff%2BzDcVL._SY355_.jpg",
     "id": "2"
       }, {
     "item": "Wraith",
     "description": "A standard among professionals",
     "price": "15",
+    "pictureURL":"https://cdn.shopify.com/s/files/1/0973/6240/products/star_wraith-sf01.png?v=1443809548",
     "id": "3"
   }]
 }

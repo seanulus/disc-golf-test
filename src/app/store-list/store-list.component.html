@@ -3,5 +3,6 @@
 <div *ngFor="let store of masterStoreList | async" (click)="goToDetailPage(store)" class="card card-default">
   <div class="card-title">
     <h3>{{store.item}}</h3>
+    <img src={{store.pictureURL}} height="100" width="100">
   </div>
 </div>

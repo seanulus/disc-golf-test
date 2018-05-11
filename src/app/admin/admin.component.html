@@ -20,6 +20,12 @@
       <br>
       <input #newPrice>
     </div>
-    <button (click)="submitForm(newItem.value, newDescription.value, newPrice.value); newItem.value=''; newDescription.value=''; newPrice.value=''">Add</button>
+
+    <div>
+      <label>Picture URL:</label>
+      <br>
+      <input #newPicture>
+    </div>
+    <button (click)="submitForm(newItem.value, newDescription.value, newPrice.value, newPicture.value); newItem.value=''; newDescription.value=''; newPrice.value=''; newPicture.value=''">Add</button>
   </div>
 </div>
