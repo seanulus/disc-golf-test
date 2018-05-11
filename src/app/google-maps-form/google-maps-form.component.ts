@@ -16,6 +16,7 @@ export class GoogleMapsFormComponent {
 
   getLocation(location: string) {
     this.googleMapsLocations.getByLocation(location).subscribe(response => {
+      console.log(response);
         this.locations = response.json();
     });
   }
