@@ -23,4 +23,11 @@ export class StoreService {
     return this.database.object('stores/' + storeId)
   }
 
+  updateItem(localUpdatedItem) {
+    var itemEntryInFirebase = this.getPlayerById(localUpdatedItem.$key);
+    itemEntryInFirebase.update({title: localUpdatedItem.title,
+                                artist: localUpdatedItem.artist,
+                                description: localUpdatedItem.description});
+  }
+
 }

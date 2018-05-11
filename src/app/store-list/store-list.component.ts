@@ -15,6 +15,7 @@ export class StoreListComponent implements OnInit {
   constructor(private router: Router, private storeService: StoreService) { }
 
   masterStoreList: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   ngOnInit() {
     this.masterStoreList = this.storeService.getPlayers();

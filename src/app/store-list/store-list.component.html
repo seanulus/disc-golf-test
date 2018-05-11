@@ -1,8 +1,13 @@
 <h2>Store Items</h2>
 
-<div *ngFor="let store of masterStoreList | async" (click)="goToDetailPage(store)" class="card card-default">
+<div *ngFor="let store of masterStoreList | async" class="card card-default">
   <div class="card-title">
-    <h3>{{store.item}}</h3>
+    <h3 (click)="goToDetailPage(store)">{{store.item}}</h3>
     <img src={{store.pictureURL}} height="100" width="100">
+    <div *ngIf="currentRoute === '/admin'">
+      {{store.description}}
+      <hr>
+      <app-edit-store [selectedItem]="store"></app-edit-store>
+    </div>
   </div>
 </div>
