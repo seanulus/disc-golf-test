@@ -1,0 +1,17 @@
+{ "players": [{
+    "item": "Destroyer",
+    "description": "A very fast disc with great speed capability",
+    "price": "10",
+    "id": "1"
+    }, {
+    "item": "Valkyrie",
+    "description": "A slower speed disc with more curve capability",
+    "price": "20",
+    "id": "2"
+      }, {
+    "item": "Wraith",
+    "description": "A standard among professionals",
+    "price": "15",
+    "id": "3"
+  }]
+}

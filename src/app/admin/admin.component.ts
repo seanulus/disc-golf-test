@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PlayerService } from '../player.service';
-import { PlayerModel } from '../player.model';
+import { StoreModel } from '../store.model';
 
 @Component({
   selector: 'app-admin',
@@ -15,8 +15,8 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(firstName: string, lastName: string, score: number, scoreArray:  Array<number>) {
-    let newPlayer: PlayerModel = new PlayerModel(firstName, lastName, score, scoreArray);
+  submitForm(item: string, description: string, price: number) {
+    let newPlayer: StoreModel = new StoreModel(item, description, price);
     this.playerService.addPlayer(newPlayer);
   }
 

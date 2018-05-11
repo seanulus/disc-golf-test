@@ -6,20 +6,20 @@
     <div>
       <label>First Name:</label>
       <br>
-      <input #newFirstName>
+      <input #newItem>
     </div>
 
     <div>
       <label>Last Name:</label>
       <br>
-      <input #newLastName>
+      <input #newDescription>
     </div>
 
     <div>
       <label>Score:</label>
       <br>
-      <input #newScore>
+      <input #newPrice>
     </div>
-    <button (click)="submitForm(newFirstName.value, newLastName.value, newScore.value); newFirstName.value=''; newLastName.value=''; newScore.value=''">Add</button>
+    <button (click)="submitForm(newItem.value, newDescription.value, newPrice.value); newItem.value=''; newDescription.value=''; newPrice.value=''">Add</button>
   </div>
 </div>

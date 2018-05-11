@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { PlayerModel } from './player.model';
+import { StoreModel } from './store.model';
 import { PLAYERS } from './mock-players';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
@@ -15,7 +15,7 @@ export class PlayerService {
     return this.players;
   }
 
-  addPlayer(newPlayer: PlayerModel) {
+  addPlayer(newPlayer: StoreModel) {
     this.players.push(newPlayer);
   }
 

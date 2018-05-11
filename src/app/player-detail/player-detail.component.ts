@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { PlayerModel } from '../player.model';
+import { StoreModel } from '../store.model';
 import { PlayerService } from '../player.service';
 
 @Component({

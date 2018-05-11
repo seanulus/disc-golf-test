@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PlayerModel } from '../player.model';
+import { StoreModel } from '../store.model';
 import { Router } from '@angular/router';
 import { PlayerService } from '../player.service';
 import { FirebaseListObservable } from 'angularfire2/database';
@@ -20,7 +20,7 @@ export class PlayerListComponent implements OnInit {
     this.masterPlayerList = this.playerService.getPlayers();
   }
 
-  goToDetailPage(clickedPlayer: PlayerModel) {
+  goToDetailPage(clickedPlayer: StoreModel) {
     // this.router.navigate(['players', clickedPlayer.id]);
   };
 }
