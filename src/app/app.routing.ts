@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { StoreListComponent } from './store-list/store-list.component';
 import { StoreDetailComponent } from './store-detail/store-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { PlayerComponent } from './player/player.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'player-list',
+    component: PlayerComponent
   }
 ];
 

@@ -14,6 +14,7 @@ import { StoreListComponent } from './store-list/store-list.component';
 import { StoreDetailComponent } from './store-detail/store-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditStoreComponent } from './edit-store/edit-store.component';
+import { PlayerComponent } from './player/player.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     StoreListComponent,
     StoreDetailComponent,
     AdminComponent,
-    EditStoreComponent
+    EditStoreComponent,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,
