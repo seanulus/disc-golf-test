@@ -18,6 +18,7 @@ import { PlayerComponent } from './player/player.component';
 import { PlayerListComponent } from './player-list/player-list.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { NewPlayerComponent } from './new-player/new-player.component';
+import { NamePipe } from './name.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -37,7 +38,8 @@ export const firebaseConfig = {
     PlayerComponent,
     PlayerListComponent,
     EditPlayerComponent,
-    NewPlayerComponent
+    NewPlayerComponent,
+    NamePipe
   ],
   imports: [
     BrowserModule,
