@@ -52,6 +52,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Known Bugs
 
+* API for maps is currently not working
+
 ## Technologies Used
 
 * HTML
